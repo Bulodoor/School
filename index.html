@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="Other/100yıl.jpg">
+  <title>TÜRKİYE CUMHURİYETİ 100.YILI</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ reset: true });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("a").on('click', function (event) {
+
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
+  <style>
+    * {
+      font-family: 'Open Sans', sans-serif;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+
+    body {
+      width: auto;
+      background: url(Other/black_and_red_hd_red_aesthetic.jpg) no-repeat fixed;
+      background-size: cover;
+    }
+
+    #uyari1 {
+      display: none;
+    }
+
+    #başlık1 {
+      color: #dcdcdc;
+      margin: 20rem auto;
+      text-align: center;
+      font-size: 7rem;
+    }
+
+    #başlık1:hover {
+      filter: opacity(2);
+      color: #f5f5f7;
+      text-shadow: 0 0 4px #f5f5f7;
+    }
+
+
+    /************************************************************** Navbar **************************************************************/
+
+    .navbar {
+      height: 36px;
+      width: 100%;
+      position: fixed;
+      top: -1950px;
+      left: 0;
+      background-color: #161515e3;
+      color: #fff;
+      text-align: center;
+      transition: top 0.3s;
+      transition: height 500ms;
+      z-index: 11;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar:hover {
+      height: 17.5em;
+    }
+
+    .navbar a {
+      height: 30px;
+      width: 150px;
+      margin: 0 10px;
+      border: 1px solid #4e4e4e;
+      border-radius: 5px;
+      position: relative;
+      transition: all 500ms;
+      z-index: 10;
+    }
+
+    .navbar div {
+      margin-top: 4px;
+      display: inline-block;
+    }
+
+    .nav-cl {
+      color: #fff;
+    }
+
+    /***** Navbar Hover *****/
+    .navbar:hover a {
+      height: 16.5em;
+      width: 25em;
+    }
+
+    #y-1,
+    #y-2,
+    #y-3 {
+      transition: all 500ms;
+    }
+
+    .navbar:hover #y-1 {
+      margin-top: 5.1em;
+      font-size: 1.5em;
+    }
+
+    .navbar:hover #y-2 {
+      margin-top: 5.1em;
+      font-size: 1.5em;
+    }
+
+    .navbar:hover #y-3 {
+      margin-top: 5.1em;
+      font-size: 1.5em;
+    }
+
+    /***** a Hover  29 Ekim *****/
+    #a11:hover {
+      background-image: url(Other/açılış1.jpg);
+      background-size: cover;
+      background-position: center;
+      transition: background-color 0.5s ease;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #a11:hover #y-1 {
+      color: red;
+    }
+
+    /***** a Hover  İstanbul *****/
+    #a12:hover {
+      background-image: url(Other/is1.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    #a12:hover #y-2 {
+      color: black;
+    }
+
+    /***** a Hover  Medine Müdafasıı *****/
+    #a13:hover {
+      background-image: url(Other/Paşa.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    #a13:hover #y-3 {
+      color: #035e03;
+    }
+
+
+    /**************************************************************** BLOKLAR  **********************************************************/
+
+    #all-div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #cl-divs {
+      display: flex;
+      justify-content: center;
+    }
+
+    #cl-divs h2 {
+      margin: 10rem;
+      font-size: 4rem;
+      color: #000;
+      z-index: 5;
+      display: inline-block;
+    }
+
+    .cl-div {
+      height: 25rem;
+      width: 40%;
+      background-color: #fff;
+      border-radius: 5%;
+      text-align: center;
+      margin: 4rem 2rem;
+      position: relative;
+    }
+
+    #cl-div-a {
+      height: 24rem;
+      width: 40vw;
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+    }
+
+    /******************** 29Ekim Cl.********************/
+    .cl-29 {
+      transition: all 500ms;
+    }
+
+    .cl-29:hover {
+      background: url(Other/açılış1.jpg);
+      background-size: cover;
+      background-position: center;
+      color: red;
+    }
+
+    .cl-29,
+    .cl-ist,
+    .cl-med,
+    #h2-1,
+    #h2-2,
+    #h2-3 {
+      transition: all 500ms;
+    }
+
+    .cl-29:hover #h2-1 {
+      color: red;
+    }
+
+    /******************** İstanbul Cl. ********************/
+    .cl-ist {
+      transition: all 500ms;
+    }
+
+    .cl-ist:hover {
+      background: url(Other/is1.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    .cl-ist:hover #h2-2 {
+      color: #fff;
+    }
+
+
+    /******************** Medine Cl. ********************/
+    .med-div {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 5rem;
+    }
+
+    .cl-div-2 {
+      height: 25rem;
+      width: 45%;
+      background-color: #fff;
+      text-align: center;
+      border-radius: 5%;
+    }
+
+    .cl-div-2 h2 {
+      color: #000;
+      margin: 10rem 0;
+      font-size: 4rem;
+    }
+
+    #cl-div-med-a {
+      height: 24rem;
+      width: 43vw;
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem
+    }
+
+    .cl-med {
+      position: relative;
+    }
+
+    .cl-med #h2-3 {
+      display: inline-block;
+    }
+
+    .cl-med:hover #h2-3 {
+      color: #035e03;
+    }
+
+    .cl-med:hover {
+      background: url(Other/Paşa.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    /************************************************************** 29 EKİM **************************************************************/
+
+    .bl {
+      height: 45rem;
+      width: 96%;
+      border-radius: 16px;
+      margin: 5rem auto;
+      position: relative;
+    }
+
+    .bl img {
+      position: absolute;
+      border-radius: 16px;
+    }
+
+    .bl-1-29 {
+      background-color: #ededed;
+      height: 70rem;
+      position: relative;
+    }
+
+    /**** 29 Ekim İlk Blok *****/
+    .p1-29 {
+      width: 40%;
+      position: absolute;
+      top: 3rem;
+      left: 5rem;
+    }
+
+    .p1-29 #h-29 {
+      font-size: 4.5rem;
+      color: #d7111c;
+      margin-bottom: 0.2em;
+    }
+
+    .p1-29 p {
+      font-size: 1.1rem;
+      margin: 0.8em 0;
+    }
+
+    .bl-1-29 #acilis {
+      width: 45%;
+      position: absolute;
+      top: 9rem;
+      right: 5rem;
+    }
+
+    /**** 29 Ekim İkinci Blok *****/
+    .bl-1-29 #Ekim-jpg {
+      width: 45%;
+      position: absolute;
+      bottom: 3rem;
+      left: 5rem;
+    }
+
+    #p2-29 {
+      width: 40%;
+      position: absolute;
+      bottom: 10rem;
+      right: 5rem;
+      font-size: 1.1rem;
+    }
+
+    /************************************************************** İSTANBUL **************************************************************/
+    .bl-ist {
+      height: 70rem;
+      background-color: #1f1f1f;
+      color: #c3c3c3;
+      font-size: 1.1rem;
+    }
+
+    /**** İstanbul İlk Blok *****/
+    .bl-ist #ist-img1 {
+      width: 45%;
+      top: 6rem;
+      left: 5rem;
+    }
+
+    .bl-ist .ist-p1 {
+      width: 40%;
+      position: absolute;
+      top: 3rem;
+      right: 5rem;
+    }
+
+    .ist-p1 h3 {
+      font-size: 4.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    /**** İstanbul İkinci Blok *****/
+    .ist-p2 {
+      width: 40%;
+      position: absolute;
+      bottom: 13rem;
+      left: 5rem;
+    }
+
+    .bl-ist #ist-img2 {
+      width: 45%;
+      bottom: 5rem;
+      right: 5rem;
+    }
+
+
+    /************************************************************** Medine Müdafasıı **************************************************************/
+
+    .bl-medine {
+      height: 63rem;
+      color: #c2cdc6;
+      background: #060e06;
+      font-size: 1.1rem;
+    }
+
+    /**** Medine Müdafasıı İlk Blok *****/
+    .medine-p1 {
+      width: 43%;
+      position: absolute;
+      top: 5rem;
+      left: 5rem;
+    }
+
+    .medine-p1 .medine-h3 {
+      font-size: 4.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    #medine-img1 {
+      width: 43%;
+      top: 10rem;
+      right: 5rem;
+    }
+
+    /**** Medine Müdafasıı İkinci Blok *****/
+    .medine-p2 {
+      position: absolute;
+      width: 43%;
+      bottom: 5rem;
+      left: 5rem;
+    }
+
+    #medine-img2 {
+      width: 20%;
+      bottom: 5rem;
+      right: 15rem;
+    }
+
+
+    /************************************************************** Footer **************************************************************/
+
+    footer {
+      background: linear-gradient(170deg, #000 0 40%, #53040d 90% 100%);
+      width: 100%;
+    }
+
+    footer img {
+      scale: 0.6;
+      border-radius: 50%;
+    }
+
+    /*****  Il-all*****/
+    .Il-all {
+      height: 200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .iletisim {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+    }
+
+    .Il-kutusu {
+      padding: 1em 2em;
+      margin: 0 1%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+
+    .fa-brands,
+    .fa-solid {
+      margin-right: 0.2em;
+    }
+
+    footer .Il-kutusu:hover {
+      filter: brightness(1.5) drop-shadow(1px 1px 1px);
+    }
+
+    footer .fa-brands {
+      padding-bottom: 0.5;
+    }
+
+    /*** İcons Colors***/
+    footer .ins-c {
+      color: #82042c;
+    }
+
+    footer .face-c {
+      color: #0866ff;
+    }
+
+    footer .twi-c {
+      color: #0a0909;
+    }
+
+    footer .web-c {
+      color: #6a6a6a;
+    }
+
+
+    /************************************************************** Responsive **************************************************************/
+    @media screen and (min-width: 1px) and (max-width: 1023px) {
+      body {
+        color: #fff;
+      }
+
+      #uyari1 {
+        color: #000;
+        display: block;
+      }
+
+      .uyari2 {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1399px) {
+
+      /*** Click ***/
+      #cl-divs h2 {
+        margin: 9rem 3rem;
+        font-size: 3.5rem;
+      }
+
+
+      /*** 29 Ekim ***/
+      .p1-29 p {
+        font-size: 1rem;
+      }
+
+      #p2-29 {
+        right: 3%;
+      }
+
+      /*** İstanbul ***/
+      .bl-ist .ist-p1 {
+        width: 40%;
+        top: 3rem;
+        right: 2rem;
+        font-size: 1rem;
+      }
+
+      .bl-ist #ist-img2 {
+        width: 45%;
+        bottom: 5rem;
+        right: 3rem;
+      }
+
+      /*** Medine ***/
+      .medine-p1 {
+        font-size: 0.99rem;
+      }
+
+      .medine-p2 {
+        font-size: 0.9rem;
+      }
+
+      #medine-img1 {
+        width: 43%;
+        top: 9rem;
+        right: 3rem;
+      }
+
+      #medine-img2 {
+        width: 21%;
+        bottom: 5rem;
+        right: 16rem;
+      }
+
+      /*** Footer ***/
+      .Il-all {
+        font-size: 9px;
+      }
+    }
+
+    @media screen and (min-width: 1760px) and (max-width: 2200px) {
+
+      /*** Bloklar  ***/
+      .bl-1-29,
+      .bl-ist,
+      .bl-medine {
+        height: 75rem;
+      }
+
+      .medine-p1,
+      .medine-p2 {
+        font-size: 20px;
+      }
+
+      .p1-29,
+      #p2-29,
+      .ist-p1,
+      .ist-p2,
+      .medine-p2 {
+        font-size: 20px;
+        bottom: 8rem;
+      }
+
+      #medine-img2 {
+        right: 18rem;
+      }
+
+      footer {
+        font-size: 22px;
+      }
+    }
+
+    @media screen and (min-width: 2201px) and (max-width: 3000px) {
+
+
+      /*** İstanbul ***/
+      .bl-ist #ist-img1 {
+        width: 30%;
+      }
+
+      .bl-ist #ist-img2 {
+        width: 35%;
+      }
+
+      .bl-ist .ist-p1 {
+        font-size: 1.5rem;
+      }
+
+      .bl-ist .ist-p2 {
+        font-size: 1.7rem;
+      }
+
+      /*** 29 Ekim ***/
+      .p1-29 p {
+        font-size: 1.3rem;
+      }
+
+      #p2-29 {
+        font-size: 1.5rem;
+      }
+
+      .bl-1-29 #acilis {
+        width: 35%;
+      }
+
+      .bl-1-29 #Ekim-jpg {
+        width: 35%;
+      }
+
+      /*** Medine ***/
+      .medine-p1 {
+        font-size: 1.6rem;
+      }
+
+      .medine-p2 {
+        font-size: 1.5rem;
+      }
+
+      #medine-img1 {
+        width: 23%;
+        top: 10rem;
+        right: 27rem;
+      }
+
+      #medine-img2 {
+        width: 12%;
+        bottom: 5rem;
+        right: 39rem;
+      }
+
+      /*** Footer ***/
+      .Il-all {
+        font-size: 25px;
+      }
+    }
+
+    @media screen and (min-width: 3001px) and (max-width: 4000px) {
+
+      /*** Click ***/
+      #cl-divs #p2-29 {
+        height: 35rem;
+      }
+
+      .cl-div {
+        height: 35rem;
+      }
+
+      #cl-divs h2 {
+        margin: 15rem;
+      }
+
+      .cl-div-2 h2 {
+        margin: 15rem 0;
+      }
+
+      #cl-div-a {
+        height: 35rem;
+      }
+
+      .cl-div-2 {
+        height: 35rem;
+      }
+
+      #cl-div-med-a {
+        height: 35rem;
+        width: 44vw;
+      }
+
+
+      /*** 29 Ekim ***/
+      .p1-29 p {
+        font-size: 1.56rem;
+      }
+
+      #p2-29 {
+        font-size: 1.65rem;
+      }
+
+      .bl-1-29 #acilis {
+        width: 30%;
+      }
+
+      .bl-1-29 #Ekim-jpg {
+        width: 25%;
+      }
+
+      /*** İstanbul ***/
+      .bl-ist .ist-p1 {
+        font-size: 1.78rem;
+      }
+
+      .bl-ist .ist-p2 {
+        font-size: 1.8rem;
+      }
+
+      .bl-ist #ist-img1 {
+        width: 23%;
+      }
+
+      .bl-ist #ist-img2 {
+        width: 27%;
+      }
+
+      /*** Medine ***/
+      .bl-medine {
+        height: 80rem;
+      }
+
+      .medine-p1 {
+        font-size: 1.8rem;
+      }
+
+      .medine-p2 {
+        font-size: 1.78rem;
+      }
+
+      #medine-img2 {
+        width: 12%;
+        bottom: 5rem;
+        right: 49rem;
+      }
+
+      #medine-img1 {
+        width: 29%;
+        top: 4rem;
+        right: 28rem;
+      }
+
+      /*** Footer ***/
+      .Il-all {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="uyari1">Lütfen dizüstü bilgisayarlarda çalıştırınız / Please run on laptops</div>
+  <div class="uyari2">
+    <div class="navbar" id="navbar">
+      <a href="#s-29" id="a11">
+        <div class="nav-cl" id="y-1"> 29 EKİM</div>
+      </a>
+      <a href="#s-ist" id="a12">
+        <div class="nav-cl" id="y-2">İSTANBUL</div>
+      </a>
+      <a href="#s-medine" id="a13">
+        <div class="nav-cl" id="y-3">MEDİNE MÜDAFASII</div>
+      </a>
+    </div>
+    <div>
+      <h1 id="başlık1">TÜRKİYE CUMHURİYETİ 100.YÜZYIL</h1>
+    </div>
+    <section id="all-div">
+      <div id="cl-divs">
+        <div class="cl-div cl-29 script2">
+          <a href="#s-29">
+            <div id="cl-div-a">
+              <h2 id="h2-1">29 EKİM</h2>
+            </div>
+          </a>
+        </div>
+        <div class="cl-div cl-ist script2">
+          <a href="#s-ist">
+            <div id="cl-div-a">
+              <h2 id="h2-2">İSTANBUL</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="med-div">
+        <div class="cl-div-2 cl-med script2">
+          <a href="#s-medine">
+            <div id="cl-div-med-a">
+              <h2 id="h2-3">MEDİNE MÜDAFASII</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="s-29">
+      <div class="bl bl-1-29 ">
+        <div class="p1-29 script3">
+          <h3 id="h-29">29 Ekim</h3>
+          <p>
+            Cumhuriyet Bayramı, Türkiye Cumhuriyeti'nin ilan edildiği 29 Ekim 1923 tarihini kutlamak için her yıl 29
+            Ekim'de kutlanan bir milli bayramdır. Cumhuriyet, halkın kendi kendini yönetmesi olarak tanımlanır ve
+            Türkiye
+            Cumhuriyeti'nin idare şekli olarak kabul edilir. Cumhuriyet, Türk milletinin bağımsızlık sembolü,
+            egemenliğin
+            ve güçlü duruşun zaferi, aydınlık bir geleceğin garantisi, milletin kendi kendini yönetmesi ve demokrasinin
+            dayanağıdır. Cumhuriyet, Türkiye'nin gelişmesi için büyük bir kazançtır ve halkın birlikteliği, kardeşliği
+            ve
+            paylaşımı anlamına gelir. Cumhuriyet Bayramı, tüm yurtta sevgi, coşku ve heyecanla kutlanır ve Türk
+            milletinin
+            Cumhuriyeti koruyup yaşatması gerektiği vurgulanır.
+          </p>
+          <p>
+            Cumhuriyet Bayramı, Türk milletinin bağımsızlık mücadelesinin en önemli dönüm noktalarından biridir. Bu
+            bayram, Türk milletinin kendi kendini yönetme iradesinin zaferi olarak kutlanır. Cumhuriyet, Türkiye'nin
+            için
+            büyük bir kazançtır. Bu kazanç, Türk milletinin birlik ve beraberliği sayesinde elde edilmiştir. Cumhuriyet
+            Bayramı, Türk milletinin birlik ve beraberliğini pekiştirmek, milli birlik ve beraberlik duygularını
+            canlandırmak için önemli bir fırsattır.
+          </p>
+        </div>
+        <img class="script2" id="acilis" src="Other/açılış1.jpg" alt="Cumhuriyetin Açılışı">
+        <img class="script2" id="Ekim-jpg" src="Other/29ekimm.jpg" alt="29 Ekim Cumhuriyet Bayramı">
+        <p class="script3" id="p2-29">
+          Bu özel gün, okullarda Cumhuriyet bayramı kutlamaları ve çeşitli etkinliklerle kutlanır. Bu etkinlikler
+          arasında, resmi törenler, konserler, yarışmalar ve gösteriler yer almaktadır. Ayrıca, Türkiye'nin dört bir
+          yanında, halkın katılımıyla kutlamalar gerçekleştirilir. Bu kutlamalar, Türkiye'nin birlik ve beraberliğini
+          gösteren önemli bir etkinliktir. Sonuç olarak, 29 Ekim Türkiye Cumhuriyeti'nin kuruluş günüdür ve ülkemiz için
+          oldukça önemlidir. Bu tarih, Türkiye'nin bağımsızlığı, özgürlüğü ve demokrasisi için büyük bir adımdır. 29
+          Ekim,
+          Türkiye'de bayram olarak kutlanır ve çeşitli etkinliklerle kutlanır. Bu kutlamalar, Türkiye'nin birlik ve
+          beraberliğini gösteren önemli bir etkinliktir.
+        </p>
+      </div>
+    </section>
+    <section id="s-ist">
+      <div class="bl bl-ist">
+        <img class="script2" id="ist-img1" src="Other/is1.jpg" alt="İstanbul">
+        <div class="ist-p1 script3">
+          <h3 id="h-ist">İstanbul</h3>
+          <p>
+            İstanbul'un işgali, Osmanlı İmparatorluğu ve İtilaf Devletleri arasında imzalanan Mondros Bırakışması ile
+            Birinci Dünya Savaşı'nın bu ülkeler arasında sona erdiğinin ilan edilmesinin ardından gerçekleşmiştir.
+            İstanbul, önce 13 Kasım 1918, sonra 16 Mart 1920'de olmak üzere iki kez işgal edilmiştir
+            . İlk işgalde, İstanbul'un önemli ve stratejik noktaları kontrol altına alındı ancak idareye el konulmadı;
+            ikinci işgal ile idareye el konuldu. İşgalin nedenleri zaman içinde değişkenlik göstermiştir. Önceleri
+            uzun
+            bir aradan sonra tekrar açılan Meclis-i Mebusan'ın Ulusal Ant'ı (Misak-ı Milli) kabul ve ilan etmesi bir
+            neden olarak görülürken sonradan 28 Kasım 1919-12 Şubat 1920 tarihleri arasında gelişip tamamlanan Maraş
+            Olaylan'nın işgali hazırlayan en geçerli neden olduğu tarih araştırmacıları tarafından desteklenmeye
+            başlanmıştır.
+          </p>
+        </div>
+        <div class="ist-p2 script3">
+          <p>
+            İstanbul, stratejik bir konuma sahip olduğundan ve Osmanlı İmparatorluğu zayıflamış olduğundan, İngiliz,
+            Fransız ve İtalyan kuvvetleri şehre girdi. Bu işgal, Osmanlı hükümetinin sonunu ve Türk Kurtuluş
+            Savaşı'nın başlangıcını işaret etti. İstanbul İşgali, Türk milletinin bağımsızlık mücadelesinin ateşleyici
+            unsurlarından biri oldu ve modern Türkiye'nin temellerini attı. İşgal sonucunda Osmanlı İmparatorluğu resmi
+            olarak sona erdi ve Türkiye Cumhuriyeti'nin kuruluşu için zemin hazırlandı.
+          </p>
+        </div>
+        <img class="script2" id="ist-img2" src="Other/is2.jpeg" alt="İstanbul">
+      </div>
+
+    </section>
+    <section id="s-medine">
+      <div class="bl bl-medine">
+        <div class="medine-p1 script3">
+          <h3 class="medine-h3">Medine Müdafasıı</h3>
+          <p id="med-p1">
+            Fahrettin Paşa, Osmanlı İmparatorluğu'nun son dönemlerinde önemli bir askeri liderdi. Kendisi,
+            I.Dünya Savaşı sırasında Osmanlı Devleti'nin Medine şehrini savunmakla görevlendirildi. Medine, İngilizlerin
+            ilerlemesine karşı önemli bir savunma noktasıydı ve bu nedenle Fahrettin Paşa'nın görevi oldukça zordu.
+            Fahrettin Paşa, Medine'deki savunma çalışmalarına hemen başladı ve şehirdeki tüm kaynakları kullanarak
+            savunma hatlarını güçlendirdi. Kendisi, askerlerine sık sık moral vererek onları cesaretlendirdi ve savaşın
+            zorluklarına karşı hazırlıklı olmalarını sağladı. Ayrıca, Medine'deki sivil halkın güvenliğini de sağlamak
+            için çaba gösterdi.
+          </p>
+        </div>
+        <img class="script2" id="medine-img1" src="Other/Paşa.jpg" alt="Fahrettin Paşa">
+        <div class="medine-p2 script3">
+          <p id="med-p2">
+            Fahrettin Paşa'nın Medine'deki savunması, İngilizlerin uzun süren kuşatmalarına rağmen başarılı oldu.
+            Kendisi, şehirdeki kaynakları akıllıca kullanarak askerlerinin ihtiyaçlarını karşıladı ve İngilizlerin
+            saldırılarını püskürttü. Medine'nin savunması, Osmanlı Devleti'nin savaşta elde ettiği en önemli başarılar
+            arasında yer aldı.Fahrettin Paşa'nın Medine'deki savunması, tarihte önemli bir yer tutar. Kendisi, savaşın
+            zorluklarına karşı direnç göstererek, askerlerini cesaretlendirerek ve şehirdeki kaynakları akıllıca
+            kullanarak 2 yıl 7 ay boyunca korudu, İngilizlerin ilerlemesini durdurdu. Bu nedenle, Fahrettin Paşa,
+            Osmanlı
+            İmparatorluğu'nun son dönemlerindeki en önemli askeri liderlerden biri olarak kabul edilir. 1936 yılında
+            tümgeneral rütbesi ile ordudan emekli oldu. 22 Kasım 1948 tarihinde bir tren yolculuğu sırasında Eskişehir
+            yakınlarında kalp krizi geçirerek öldü. Vasiyeti üzerine Aşiyan Mezarlığına defnedildi.
+          </p>
+        </div>
+        <img class="script2" id="medine-img2" src="Other/Ömer_Fahreddin_Paşa.jpg" alt="Fahrettin Paşa">
+      </div>
+    </section>
+    <footer>
+      <div class="Il-all script2">
+        <img src="Other/ShcoolLogo.jpg" alt="Münir Tınaztep Anadolu Lisesi">
+        <div class="iletisim">
+          <div class="Il-kutusu ins">
+            <i class="fa-brands fa-instagram ins-c"></i>
+            <a href="https://www.instagram.com/munirtinaztepeanadolu/?hl=tr" target="_blank">
+              <div class="ins-c">Instagram</div>
+            </a>
+          </div>
+          <div class="Il-kutusu face">
+            <i class="fa-brands fa-facebook face-c"></i>
+            <a href="https://www.facebook.com/profile.php?id=100063490121084&mibextid=b06tZ0" target="_blank">
+              <div class="face-c">Facebook</div>
+            </a>
+          </div>
+          <div class="Il-kutusu twi">
+            <i class="fa-brands fa-x-twitter twi-c"></i>
+            <a href="https://twitter.com/t_lisesi?t=Fz3EEb42Dz6Ex_xUTn77KA&s=08" target="_blank">
+              <div class="twi-c">Twitter</div>
+            </a>
+          </div>
+          <div class="Il-kutusu web">
+            <i class="fa-solid fa-earth-americas web-c"></i>
+            <a href="https://munirtinaztepeal.meb.k12.tr" target="_blank">
+              <div class="web-c">Web Sitemiz</div>
+            </a>
+          </div>
+        </div>
+        <img id="meb" src="Other/meb-milli-egitim-bakanligi-logo.png" alt="MEB">
+      </div>
+  </div>
+  </footer>
+  </div>
+  <!-- Java Scripts -->
+  <script>
+    ScrollReveal().reveal('.script');
+    ScrollReveal().reveal('.script2', { delay: 500 });
+    ScrollReveal().reveal('.script3', { delay: 800 });
+  </script>
+  <script>
+    window.addEventListener("scroll", function () {
+      var navbar = document.getElementById("navbar");
+      if (window.scrollY > 1950) {
+        navbar.style.top = "0";
+      } else {
+        navbar.style.top = "-1950px";
+      }
+    });
+  </script>
+</body>
+<!-- Bulodoor 25.10.2023 -->
+
+</html>
