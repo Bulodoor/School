@@ -5,4 +5,5 @@ projede en komik durum ben daha host etmeyi bilmiyordum ve benden host etmemi is
 sonrasında artık host edip okulun sitesinde paylaşıldı. 
 
 Proje'nin Bağlantısı: https://bldweb.netlify.app/
+
 Okul Sayfası: https://munirtinaztepeal.meb.k12.tr/icerikler/code-week-kod-haftasi_14388062.html 
